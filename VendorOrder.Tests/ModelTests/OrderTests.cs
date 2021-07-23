@@ -43,6 +43,54 @@ namespace VendorOrder.Tests
       Assert.AreEqual(date, resultDate);
       Assert.AreEqual(price, resultPrice);
     }
-    
+
+    [TestMethod]
+    public void SetDescription_SetDescription_String()
+    {
+      //Arrange
+      string title = "100 croissants";
+      string description = "Make and deliver 100 croissants in the morning";
+      string date = "July 23, 2021";
+      int price = 75;
+      Order newOrder = new Order(title, description, date, price);
+
+      //Act
+      string updatedDescription = "Make and deliver 10000 croissants in the morning";
+      newOrder.Description = updatedDescription;
+      string result = newOrder.Description;
+
+      //Assert
+      Assert.AreEqual(updatedDescription, result);
+    }
+
+    // [TestMethod]
+    // public void GetAll_ReturnsEmptyList_OrderList()
+    // {
+    //   // Arrange
+    //   List<Order> newList = new List<Order> { };
+
+    //   // Act
+    //   List<Order> result = Order.GetAll();
+
+    //   // Assert
+    //   CollectionAssert.AreEqual(newList, result);
+    // }
+
+    // [TestMethod]
+    // public void GetAll_ReturnsOrders_OrderList()
+    // {
+    //   //Arrange
+    //   string description01 = "Walk the dog";
+    //   string description02 = "Wash the dishes";
+    //   Order newOrder1 = new Order(description01);
+    //   Order newOrder2 = new Order(description02);
+    //   List<Order> newList = new List<Order> { newOrder1, newOrder2 };
+
+    //   //Act
+    //   List<Order> result = Order.GetAll();
+
+    //   //Assert
+    //   CollectionAssert.AreEqual(newList, result);
+    // }
   }
 }
