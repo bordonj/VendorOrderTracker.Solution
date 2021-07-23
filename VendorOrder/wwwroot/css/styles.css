@@ -1,0 +1,21 @@
+
+/* layout */
+body, html {
+  background-color: rgb(181, 181, 181);
+  height: 100%;
+}
+.container {
+  height: 100%;
+  background-color: white;
+  width: 80%;
+}
+/* text style */
+h1 {
+  text-transform: uppercase;
+  font-family: 'Kalam', cursive;
+  font-weight: bolder;
+}
+.jumbotron h1 {
+  text-align: center;
+}
+/* media */

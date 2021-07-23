@@ -36,7 +36,7 @@ namespace VendorOrder.Controllers
       return View(model);
     }
 
-    // This one creates new Items within a given Category, not new Categories:
+    // This one creates new Orders within a given Vendor, not new Vendors:
 
     [HttpPost("/vendor/{vendorId}/orders")]
     public ActionResult Create(int vendorId, string title, string description, string date, string price)
