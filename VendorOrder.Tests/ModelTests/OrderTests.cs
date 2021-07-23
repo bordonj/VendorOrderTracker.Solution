@@ -63,34 +63,40 @@ namespace VendorOrder.Tests
       Assert.AreEqual(updatedDescription, result);
     }
 
-    // [TestMethod]
-    // public void GetAll_ReturnsEmptyList_OrderList()
-    // {
-    //   // Arrange
-    //   List<Order> newList = new List<Order> { };
+    [TestMethod]
+    public void GetAll_ReturnsEmptyList_OrderList()
+    {
+      // Arrange
+      List<Order> newList = new List<Order> { };
 
-    //   // Act
-    //   List<Order> result = Order.GetAll();
+      // Act
+      List<Order> result = Order.GetAll();
 
-    //   // Assert
-    //   CollectionAssert.AreEqual(newList, result);
-    // }
+      // Assert
+      CollectionAssert.AreEqual(newList, result);
+    }
 
-    // [TestMethod]
-    // public void GetAll_ReturnsOrders_OrderList()
-    // {
-    //   //Arrange
-    //   string description01 = "Walk the dog";
-    //   string description02 = "Wash the dishes";
-    //   Order newOrder1 = new Order(description01);
-    //   Order newOrder2 = new Order(description02);
-    //   List<Order> newList = new List<Order> { newOrder1, newOrder2 };
+    [TestMethod]
+    public void GetAll_ReturnsOrders_OrderList()
+    {
+      //Arrange
+      string title1 = "100 croissants";
+      string description1 = "Make and deliver 100 croissants in the morning";
+      string date1 = "July 23, 2021";
+      int price1 = 75;
+      string title2 = "100 cookies";
+      string description2 = "Make and deliver 100 cookies in the morning";
+      string date2 = "July 23, 2021";
+      int price2 = 60;
+      Order newOrder1 = new Order(title1, description1, date1, price1);
+      Order newOrder2 = new Order(title2, description2, date2, price2);
+      List<Order> newList = new List<Order> { newOrder1, newOrder2 };
 
-    //   //Act
-    //   List<Order> result = Order.GetAll();
+      //Act
+      List<Order> result = Order.GetAll();
 
-    //   //Assert
-    //   CollectionAssert.AreEqual(newList, result);
-    // }
+      //Assert
+      CollectionAssert.AreEqual(newList, result);
+    }
   }
 }
