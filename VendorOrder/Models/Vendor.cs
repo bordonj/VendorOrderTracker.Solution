@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 
-namespace ToDoList.Models
+namespace VendorOrder.Models
 {
-  public class Category
+  public class Vendor
   {
     private static List<Category> _instances = new List<Category> {};
     public string Name { get; set; }
