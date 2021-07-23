@@ -98,5 +98,26 @@ namespace VendorOrder.Tests
       //Assert
       CollectionAssert.AreEqual(newList, result);
     }
+    [TestMethod]
+    public void Find_ReturnsCorrectOrder_Order()
+    {
+      //Arrange
+      string title1 = "100 croissants";
+      string description1 = "Make and deliver 100 croissants in the morning";
+      string date1 = "July 23, 2021";
+      int price1 = 75;
+      string title2 = "100 cookies";
+      string description2 = "Make and deliver 100 cookies in the morning";
+      string date2 = "July 23, 2021";
+      int price2 = 60;
+      Order newOrder1 = new Order(title1, description1, date1, price1);
+      Order newOrder2 = new Order(title2, description2, date2, price2);
+
+      //Act
+      Order result = Order.Find(2);
+
+      //Assert
+      Assert.AreEqual(newOrder2, result);
+    }
   }
 }
