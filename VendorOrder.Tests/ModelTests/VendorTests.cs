@@ -97,7 +97,7 @@ namespace VendorOrder.Tests
       string orderTitle = "A party of 20";
       string orderDesc = "50 croissants";
       string date = "July 20, 2021";
-      int price = 50;
+      string price = "50";
       Order newOrder = new Order(orderTitle, orderDesc, date, price);
       List<Order> newList = new List<Order> { newOrder };
       string vendorName = "Suzie's Cafe";
