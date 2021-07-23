@@ -21,7 +21,7 @@ namespace VendorOrder.Controllers
     //   return View();
     // }
 
-    [HttpGet("/vendor/{vendorId}/orders/{orderId}")]
+    [HttpGet("/vendor/{vendorId}/order/{orderId}")]
     public ActionResult Show(int vendorId, int orderId)
     {
       Order order = Order.Find(orderId);
