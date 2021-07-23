@@ -72,6 +72,23 @@ namespace VendorOrder.Tests
       CollectionAssert.AreEqual(newList, result);
     }
 
+    [TestMethod]
+    public void Find_ReturnsCorrectCategory_Category()
+    {
+      //Arrange
+      string vendorName1 = "Suzie's Cafe";
+      string vendorDesc1 = "A place for people to study and eat baked goodies.";
+      string vendorName2 = "Potato's Sitdown";
+      string vendorDesc2  = "A place for potatoes to sit down and enjoy baked goodes";
+      Vendor newVendor1 = new Vendor(vendorName1, vendorDesc1);
+      Vendor newVendor2 = new Vendor(vendorName2, vendorDesc2);
+
+      //Act
+      Vendor result = Vendor.Find(2);
+
+      //Assert
+      Assert.AreEqual(newVendor2, result);
+    }
 
     
   }
