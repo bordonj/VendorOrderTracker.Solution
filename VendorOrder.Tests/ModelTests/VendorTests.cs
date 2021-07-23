@@ -53,6 +53,25 @@ namespace VendorOrder.Tests
       Assert.AreEqual(1, result);
     }
 
+    [TestMethod]
+    public void GetAll_ReturnsAllVendorObjects_VendorList()
+    {
+      //Arrange
+      string vendorName1 = "Suzie's Cafe";
+      string vendorDesc1 = "A place for people to study and eat baked goodies.";
+      string vendorName2 = "Potato's Sitdown";
+      string vendorDesc2  = "A place for potatoes to sit down and enjoy baked goodes";
+      Vendor newVendor1 = new Vendor(vendorName1, vendorDesc1);
+      Vendor newVendor2 = new Vendor(vendorName2, vendorDesc2);
+      List<Vendor> newList = new List<Vendor> { newVendor1, newVendor2 };
+
+      //Act
+      List<Vendor> result = Vendor.GetAll();
+
+      //Assert
+      CollectionAssert.AreEqual(newList, result);
+    }
+
 
     
   }
