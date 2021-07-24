@@ -3,11 +3,19 @@
 body, html {
   background-color: rgb(181, 181, 181);
   height: 100%;
+  font-family: 'Kalam', cursive;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 .container {
   height: 100%;
   background-color: white;
-  width: 80%;
+  width: 70%;
+}
+.homeButtons {
+  width: 300px;
+  margin: auto;
+  /* display: block; */
+  /* background-color: black; */
 }
 /* text style */
 h1 {
@@ -15,7 +23,14 @@ h1 {
   font-family: 'Kalam', cursive;
   font-weight: bolder;
 }
+.btn {
+  font-size: 20px;
+}
 .jumbotron h1 {
   text-align: center;
 }
+.splash h2 {
+  text-align: center;
+}
+
 /* media */
