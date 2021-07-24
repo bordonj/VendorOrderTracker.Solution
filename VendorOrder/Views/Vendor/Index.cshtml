@@ -10,11 +10,15 @@
 {
   <h3>No vendors have been added yet!</h3>
 } 
-
+<ol>
 @foreach (Vendor vendor in Model)
 {
-  <h3><a href='/vendor/@vendor.Id'>@vendor.Name</a></h3>
+  <li>
+    <h3><a href='/vendor/@vendor.Id'>@vendor.Name</a></h3>
+  </li>
   <h4>@vendor.Description</h4>
 }
+</ol>
+
 
 <p><a href='/'>Back home</a></p>
