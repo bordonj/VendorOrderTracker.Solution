@@ -2,14 +2,20 @@
 /* layout */
 body, html {
   background-color: rgb(181, 181, 181);
+  background-image: url(https://images.unsplash.com/photo-1523294587484-bae6cc870010?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1464&q=80);
   height: 100%;
-  font-family: 'Kalam', cursive;
+  /* font-family: 'Kalam', cursive; */
   font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
+}
+.jumbotron {
+  background-color: pink;
 }
 .container {
   height: 100%;
   background-color: white;
   width: 70%;
+  min-width: 800px;
 }
 .homeButtons {
   width: 300px;
@@ -17,6 +23,17 @@ body, html {
   /* display: block; */
   /* background-color: black; */
 }
+input {
+  display: block;
+  margin: 5px 0;
+}
+.orders {
+  border: 1px solid black;
+}
+
+
+
+
 /* text style */
 h1 {
   text-transform: uppercase;
@@ -25,6 +42,7 @@ h1 {
 }
 .btn {
   font-size: 20px;
+  margin: 10px 10px;
 }
 .jumbotron h1 {
   text-align: center;
@@ -32,5 +50,11 @@ h1 {
 .splash h2 {
   text-align: center;
 }
+a:hover {
+  text-decoration: none;
+}
+/* #addVendor {
+  font-size: 30px;;
+} */
 
 /* media */
