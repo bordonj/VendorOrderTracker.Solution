@@ -116,12 +116,15 @@ b {
   padding: 2%;
   text-align: center;
 }
-.orders b {
+/* .orders b { */
   /* background-color: pink; */
-  text-align: right;
+  /* text-align: right; */
   /* margin-right: 0;
   margin-left: auto; */
-  display: block;
+  /* display: block; */
+/* } */
+ol {
+  font-size: 30px;
 }
 
 
