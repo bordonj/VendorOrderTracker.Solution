@@ -1,13 +1,26 @@
 @{
   Layout = "_Layout";
 }
+<div class="orders">
+  <div class="row">
+    <div class="col-3">
+      <h4><b>Title:</b></h4>
+      <h4><b>Date:</b></h4>
+      <h4><b>Price:</b></h4>
+      <h4><b>Description:</b></h4>
+    </div>
+    <div class="col-9">
+      <h4>@Model["order"].Title</h4>
+      <h4>@Model["order"].Date</h4>
+      <h4>@Model["order"].Price</h4>
+      <h4>@Model["order"].Description</h4>
+    </div>
+  </div>
+</div>
+<div class="orderButtons">
+  <a href='/vendor/@Model["vendor"].Id/order/new'><button class="btn btn-warning">Add another item</button></a>
+  <a href='/vendor/@Model["vendor"].Id/'><button class="btn btn-warning">View orders for vendor</button></a>
+  <a href='/vendor'><button class="btn btn-warning">View all vendors</button></a>
+</div>
 
-<h1>Vendor @(Model["vendor"].Name) - Order List Details: </h1>
 
-<h2>@Model["order"].Title</h2>
-<h3>@Model["order"].Description</h3>
-<h3>@Model["order"].Date</h3>
-<h3>@Model["order"].Price</h3>
-
-<a href='/vendor/@Model["vendor"].Id/order/new'>Add another item</a>
-<a href='/vendor'>View all vendors</a>

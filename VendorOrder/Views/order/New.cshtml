@@ -3,16 +3,17 @@
 }
 
 <h1>Add a new item to @Model.Name</h1>
-
-<form action="/vendor/@Model.Id/orders" method="post">
-  <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
-  <label for="title">Order Title</label>
-  <input id="title" name="title" type="text">
-  <label for="description">Order Description</label>
-  <input id="description" name="description" type="text">
-  <label for="date">Order Date</label>
-  <input id="date" name="date" type="text">
-  <label for="price">Order Price</label>
-  <input id="price" name="price" type="text">
-  <button type='submit'>Add Order</button>
-</form>
+<div class="myForm">
+  <form action="/vendor/@Model.Id/orders" method="post">
+    <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
+    <label for="title">Order Title</label>
+    <input id="title" name="title" type="text" class="form-control">
+    <label for="description">Order Description</label>
+    <input id="description" name="description" type="text" class="form-control">
+    <label for="date">Order Date</label>
+    <input id="date" name="date" type="date" class="form-control">
+    <label for="price">Order Price</label>
+    <input id="price" name="price" type="text" class="form-control">
+    <button class="btn btn-warning" type='submit'>Add Order</button>
+  </form>
+</div>
