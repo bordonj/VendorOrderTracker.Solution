@@ -68,7 +68,8 @@ label {
 /* text style */
 h1 {
   text-transform: uppercase;
-  font-family: 'Kalam', cursive;
+  font-family: 'Lemonada', cursive;
+  /* font-family: 'Kalam', cursive; */
   font-weight: bolder;
 }
 .btn {
