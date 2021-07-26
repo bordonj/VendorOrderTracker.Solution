@@ -1,6 +1,6 @@
 ## Vendor and Order Tracker
 
-#### _Vendor and Order Trackery- 07/23/21 - Code Review009_
+#### _Vendor and Order Tracker - 07/23/21 - Code Review009_
 
 #### By _**Jennifer Bordon**_
 ## Description
@@ -25,9 +25,10 @@ This is an MVC application to help Pierre track the vendors that purchase baked 
 3. Go to the test folder using ```cd VendorOrder.Tests``` and run the command ```dotnet restore``` from the terminal
 4. Run the command ```dotnet test``` to confirm the project functionality
 5. To run the program itself, navigate from the test folder to the `VendorOrder` directory by typing ```cd ../VendorOrder/```
-6. Inside the `VendorOrder` directory, type the command `dotnet run` in the terminal to run the executable file
+6. Inside the `VendorOrder` directory, type the commands `dotnet restore` and then `dotnet run` in the terminal 
+7. To see the this in the browser, copy and paste `http://localhost:5000` in the browser and click enter
 
-_Note: if the command doesn't seem to run all the way, and seems like it froze, please follow these steps_
+_Note: if any commands don't seem to run, please follow these steps_
   1. Kill your current terminal that is frozen
   2. Create a new terminal
   3. Navigate to the respective directory
